@@ -1,0 +1,233 @@
+* {
+    //border: 1px solid red;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    //background: rgb(169, 235, 184);
+    font-family: 'Source Sans Pro', sans-serif;
+    a {
+        color: rgb(8, 0, 44);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    //font-size: 20px; //!pre mobil size 45
+    header {
+        width: 100%;
+        color: black;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        width: 100%;
+        min-height: 60px;
+        height: fit-content;
+        background: #282A35;
+        .jazyky {
+            display: grid;
+            justify-content: start;
+            padding: 13px 10px;
+            a {
+                display: grid;
+                grid-row: 1;
+                width: fit-content;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                padding: 10px 15px;
+                margin: 0 5px;
+                color: white;
+                background: #282A35;
+                &:hover {
+                    background: #202129;
+                }
+            }
+            .selected {
+                background: rgb(4, 156, 39);
+                border-radius: 10px;
+                &:hover {
+                    background: rgb(3, 105, 27);
+                }
+            }
+        }
+    }
+    nav {
+        position: fixed;
+        min-width: 135px;
+        @media (max-width: 819px) {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+        }
+        @media (min-width:820px) {
+            position: fixed;
+            top: 69px;
+            float: left;
+            width: 140px;
+            height: 100vh;
+            z-index: 1;
+            background: rgb(220, 220, 220);
+        }
+        /*@media (max-width:849px) {
+            @media (min-width: 600px) {
+                position: fixed;
+                margin-top: 69px;
+                float: left;
+                width: 135px;
+                height: 100vh;
+                background: rgb(220, 220, 220);
+            }
+        }
+        @media (max-width: 1249px) {
+            @media (min-width: 850px) {
+                position: fixed;
+                margin-top: 69px;
+                float: left;
+                height: 100vh;
+                background: rgb(220, 220, 220);
+            }
+        }
+        @media (min-width: 1250px) {
+            position: fixed;
+            margin-top: 69px;
+            float: left;
+            width: 10%;
+            height: 100vh;
+            background: rgb(220, 220, 220);
+        }*/
+        table {
+            position: relative;
+            left: 0%;
+            width: 100%;
+            caption {
+                margin: 20px 0 3px 0;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            tr {
+                td {
+                    &:hover {
+                        background: rgb(180, 180, 180);
+                    }
+                    a {
+                        display: block;
+                        width: 96%;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        position: relative;
+        /*float: right;*/
+        margin-top: 70px;
+        @media (max-width: 819px) {
+            width: 100%;
+        }
+        @media (min-width:820px) {
+            margin-left: 135px;
+            width: auto;
+        }
+        h1 {
+            padding: 0 0 0 25px;
+            background: white;
+        }
+        h2 {
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+        h3 {
+            width: fit-content;
+        }
+        .lekcia {
+            padding-left: 5%;
+            background: white;
+            @media (min-width: 1500px) {
+                display: grid;
+                grid-template-columns: 50%;
+            }
+            .zvyraznenie {
+                background: rgb(230, 230, 230);
+                color: red;
+            }
+            ul {
+                translate: 35px;
+                width: fit-content;
+                max-width: 90%;
+                min-width: 50%;
+                padding-left: 0;
+                li {
+                    width: fit-content;
+                    margin: 10px;
+                }
+            }
+            dl {
+                translate: 1%;
+                width: fit-content;
+                padding: 1%;
+                max-width: 90%;
+                min-width: 50%;
+                dt {
+                    width: fit-content;
+                }
+                dd {
+                    margin: 10px 0 10px 20px;
+                    width: fit-content;
+                }
+            }
+            .teoria {
+                @media (min-width: 1500px) {
+                    grid-column: 1;
+                }
+                .vzor {
+                    background: lightgray;
+                    padding: 15px;
+                    border-radius: 5px;
+                    min-width: 250px;
+                    max-width: 75%;
+                    width: fit-content;
+                    height: fit-content;
+                    margin-left: 10%;
+                    font-family: Consolas, Menlo, "courier new", "monospace";
+                    .vnutorne_div {
+                        background: white;
+                        padding: 10px;
+                    }
+                }
+            }
+            .vysvetlivka {
+                @media (min-width: 1500px) {
+                    grid-column: 2;
+                }
+            }
+            .hneda {
+                color: brown;
+            }
+            .modra {
+                color: mediumblue;
+            }
+            .cervena {
+                color: red;
+            }
+        }
+        .medzera {
+            width: auto;
+            .jeden {
+                height: 50px;
+                background: linear-gradient(white, rgb(169, 235, 184));
+            }
+            .dva {
+                height: 50px;
+                background: rgb(169, 235, 184);
+            }
+            .tri {
+                height: 50px;
+                background: linear-gradient(rgb(169, 235, 184), white);
+            }
+        }
+    }
+}

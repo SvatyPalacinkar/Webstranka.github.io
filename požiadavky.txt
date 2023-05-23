@@ -1,0 +1,40 @@
+Uložený:
+    Valluš_2E.zip					!NIE AKO .RAR
+OBSAH:
+    header						-Done
+    nav						-Done
+    main						-Done
+    footer						-To do!!!!
+    3-4 podstránky				-In progress
+    responzívny dizajn				-To do!!!!
+    CSS grid					-To do!!!! Done <header>
+    5 sémantických značiek			-To do!!!!
+    <p><div><span>				-DoneDone
+    zoznam  odrážkový				-DoneDone
+		číslovaný				-To do!!!!
+		popiskový				-Done
+    tabuľku						-Done
+    Obrázky:
+        2 s rámčekom				-To do!!!!
+        1 ako odkaz				-Done
+        1 ako pozadia				-To do!!!!
+    Odkaz na inú stránku			-To do!!!!
+    Kotvy min 2					-Done
+CSS:
+    Triedy						-Done
+    identifikátory				-In progress
+    pseudotried					-In progress
+    hromadná deklarácia				-Done
+    kontextová deklarácia			-To do!!!!
+    Vzhľad odkazov podľa stavu		-Done
+    Format textu a farby			-Done
+    Rámčeky						-To do!!!!
+    zmena číslovania				-To do!!!!
+    vlastná odrážka				-To do!!!!
+    zmena odrážky					-To do!!!!
+    margin a padding				-Done
+    z-index						-In progress
+    zaoblenie rohov				-Done
+    gradient					-Done
+    tien pri objekte 				-Done
+    tien pri texte				-To do!!!!

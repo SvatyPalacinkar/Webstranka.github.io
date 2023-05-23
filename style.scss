@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    a {
+        color: rgb(8, 0, 44);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    header {
+        color: black;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        min-height: 60px;
+        height: fit-content;
+        background: #282A35;
+        .jazyky {
+            display: grid;
+            justify-content: start;
+            padding: 13px 10px;
+            overflow: auto;
+            scrollbar-width: thin; //For Firefox
+            -ms-overflow-style: none; //For Internet Explorer and Edge
+            scroll-behavior: smooth;
+            a {
+                display: grid;
+                grid-row: 1;
+                width: fit-content;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                padding: 10px 15px;
+                margin: 0 5px;
+                color: white;
+                background: #282A35;
+                &:hover {
+                    background: #202129;
+                }
+            }
+            .selected {
+                background: rgb(4, 156, 39);
+                border-radius: 10px;
+                &:hover {
+                    background: rgb(3, 105, 27);
+                }
+            }
+        }
+    }
+    main {
+        margin-top: 69px;
+        display: grid;
+        .html {
+            background: rgb(90, 206, 117);
+        }
+        .css {
+            background: rgb(255, 255, 157);
+        }
+        .python {
+            background: rgb(255, 156, 156);
+            ;
+        }
+        .c {
+            background: rgb(135, 135, 255);
+            ;
+        }
+        #panel {
+            display: grid;
+            @media (min-width: 1000px) {
+                grid-template-columns: 50%;
+                h2 {
+                    width: fit-content;
+                }
+                .priklad {
+                    max-width: 1000px;
+                }
+            }
+            @media (max-width: 999px) {
+                grid-template-columns: 35% 65%;
+                h2 {
+                    width: fit-content;
+                }
+                .priklad {
+                    max-width: 700px;
+                }
+            }
+            @media (max-width: 780px) {
+                display: block;
+                height: fit-content;
+                .priklad {
+                    display: block;
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    h2 {
+                        width: 100%;
+                    }
+                    * {
+                        visibility: hidden;
+                    }
+                }
+            }
+            .link_kurz {
+                display: grid;
+                grid-template-rows: 2;
+                height: fit-content;
+                padding: 100px 0;
+                justify-items: center;
+                align-content: center;
+                h2 {
+                    grid-row: 1;
+                    font-size: 80px;
+                }
+                h3 {
+                    grid-row: 2;
+                    display: block;
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 15px;
+                    border-radius: 25px;
+                    //translate: 5%;
+                    //font-size: 30px;
+                    background: white;
+                }
+            }
+            .priklad {
+                grid-column: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .vzor {
+                    display: flex;
+                    padding: 25px;
+                    width: 75%;
+                    height: fit-content;
+                    border-radius: 25px;
+                    background: white;
+                    .code {
+                        width: 75%;
+                        margin-top: 30px;
+                        padding: 15px;
+                        background: rgb(218, 218, 218);
+                    }
+                }
+            }
+        }
+        .hneda {
+            color: brown;
+        }
+        .modra {
+            color: mediumblue;
+        }
+        .cervena {
+            color: red;
+        }
+    }
+}
+
+//800 je hranica rozlznia

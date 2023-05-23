@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body a {
+  color: rgb(8, 0, 44);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+body header {
+  color: black;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  min-height: 60px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #282A35;
+}
+body header .jazyky {
+  display: grid;
+  justify-content: start;
+  padding: 13px 10px;
+  overflow: auto;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+body header .jazyky a {
+  display: grid;
+  grid-row: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  color: white;
+  background: #282A35;
+}
+body header .jazyky a:hover {
+  background: #202129;
+}
+body header .jazyky .selected {
+  background: rgb(4, 156, 39);
+  border-radius: 10px;
+}
+body header .jazyky .selected:hover {
+  background: rgb(3, 105, 27);
+}
+body main {
+  margin-top: 69px;
+  display: grid;
+}
+body main .html {
+  background: rgb(90, 206, 117);
+}
+body main .css {
+  background: rgb(255, 255, 157);
+}
+body main .python {
+  background: rgb(255, 156, 156);
+}
+body main .c {
+  background: rgb(135, 135, 255);
+}
+body main #panel {
+  display: grid;
+}
+@media (min-width: 1000px) {
+  body main #panel {
+    grid-template-columns: 50%;
+  }
+  body main #panel h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body main #panel .priklad {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 999px) {
+  body main #panel {
+    grid-template-columns: 35% 65%;
+  }
+  body main #panel h2 {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body main #panel .priklad {
+    max-width: 700px;
+  }
+}
+@media (max-width: 780px) {
+  body main #panel {
+    display: block;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body main #panel .priklad {
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  body main #panel .priklad h2 {
+    width: 100%;
+  }
+  body main #panel .priklad * {
+    visibility: hidden;
+  }
+}
+body main #panel .link_kurz {
+  display: grid;
+  grid-template-rows: 2;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 100px 0;
+  justify-items: center;
+  align-content: center;
+}
+body main #panel .link_kurz h2 {
+  grid-row: 1;
+  font-size: 80px;
+}
+body main #panel .link_kurz h3 {
+  grid-row: 2;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 25px;
+  background: white;
+}
+body main #panel .priklad {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #panel .priklad .vzor {
+  display: flex;
+  padding: 25px;
+  width: 75%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  background: white;
+}
+body main #panel .priklad .vzor .code {
+  width: 75%;
+  margin-top: 30px;
+  padding: 15px;
+  background: rgb(218, 218, 218);
+}
+body main .hneda {
+  color: brown;
+}
+body main .modra {
+  color: mediumblue;
+}
+body main .cervena {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

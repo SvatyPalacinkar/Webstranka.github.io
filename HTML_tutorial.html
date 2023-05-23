@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Programming tutorial</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var anchorLinks = document.querySelectorAll('a[href^="#"]');
+            for (var i = 0; i < anchorLinks.length; i++) {
+                var anchorLink = anchorLinks[i];
+                anchorLink.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var target = this.getAttribute('href').substring(1);
+                    if (target === '') {
+                        scrollToTop();
+                    } else {
+                        scrollToCenter(target);
+                    }
+                });
+            }
+        });
+
+        var debounceTimeout;
+
+        function debounce(func, delay) {
+            clearTimeout(debounceTimeout);
+            debounceTimeout = setTimeout(func, delay);
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollToCenter(target) {
+            var targetElement = document.getElementById(target);
+            if (targetElement) {
+                var elementPosition = targetElement.offsetTop;
+                var offsetPosition = elementPosition - (window.innerHeight / 2 - targetElement.offsetHeight / 2);
+                debounce(function() {
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }, 100);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="horizontalne_menu">
+        <!-- Left menu: výber lekcie jazyka-->
+        <div class="jazyky">
+            <a href="index.html"><img src="home.png" width="22" height="22" class="obrazok"></a>
+            <a href="HTML_tutorial.html" class="selected">HTML</a>
+            <a href="CSS_tutorial.html">CSS</a>
+            <a href="PYTHON_tutorial.html">Python</a>
+            <a href="C_tutorial.html">C</a>
+        </div>
+    </header>
+    <nav>
+        <table>
+            <caption>
+                HTML Tutorial
+            </caption>
+            <tr>
+                <td>
+                    <a href="#" onclick="scrollToTop()">HTML Základ</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#jedna">HTML Dokument</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#dva">HTML DOCTYPE</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#tri">HTML Nadpisy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#styry">HTML Paragrafy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#pat">HTML Linky</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#sest">HTML Obrázky</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+    <main>
+        <h1>Nauč sa s nami programovať!</h1>
+        <div id="nula" class="lekcia">
+            <div class="teoria">
+                <h2 id="zaklad">Čo je HTML?</h2>
+                <ul>
+                    <li>je skratka pre "Hyper Text Markup Language"</li>
+                    <li>je základným jazykom na výrobu internetových stránok</li>
+                    <li>popisuje štruktúru webovej stránky</li>
+                    <li>sa skladá zo série elementov</li>
+                    <li>elementy popisujú ako prehliadavač zobrazí kontent stránky</li>
+                </ul>
+                <br>
+                <div class="vzor">
+                    <h3>Priklad</h3>
+                    <div class="vnutorne_div">
+                        <p class="code">
+                            <span class="modra">&lt;</span><span class="hneda">!DOCTYPE</span><span class="cervena"> html</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">html</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">title</span><span class="modra">&gt;</span>Názov stránky<span class="modra">&lt;</span><span class="hneda">/title</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">body</span><span class="modra">&gt;</span>
+                            <br><br>
+                            <span class="modra">&lt;</span><span class="hneda">h1</span><span class="modra">&gt;</span>Môj prvý nadpis<span class="modra">&lt;</span><span class="hneda">/h1</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">p</span><span class="modra">&gt;</span>Môj prvý paragraf<span class="modra">&lt;</span><span class="hneda">/p</span><span class="modra">&gt;</span>
+                            <br><br>
+                            <span class="modra">&lt;</span><span class="hneda">/body</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">/html</span><span class="modra">&gt;</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vysvetlivka">
+                <h2>Vysvetlenie prikladu:</h2>
+                <dl>
+                    <dt><span class="zvyraznenie">&lt;!DOCTYPE html></span> </dt>
+                    <dd>deklarácia definuje ,že tento dokument je verzie HTML5</dd>
+                    <dt><span class="zvyraznenie">&lt;html></span></dt>
+                    <dd>je koreňom HTML stránky</dd>
+                    <dt><span class="zvyraznenie">&lt;head></span></dt>
+                    <dd>je element ktorý obsahuje informácie o HTML stránke</dd>
+                    <dt><span class="zvyraznenie">&lt;title></span></dt>
+                    <dd>je element ktorý špecifikuje názov HTML stránky (ktorý sa zobrazí v ldtište prehliadača)</dd>
+                    <dt><span class="zvyraznenie">&lt;body></span></dt>
+                    <dd>je element ktorý definuje telo dokumentu a je to kontajner pre všetok viditelný kontent stránky</dd>
+                    <dt><span class="zvyraznenie">&lt;h1></span></dt>
+                    <dd>je element ktorý definuje nádpis</dd>
+                    <dt><span class="zvyraznenie">&lt;p></span></dt>
+                    <dd>je element ktorý definuje paragraf</dd>
+                </dl>
+            </div>
+        </div>
+        <br><br>
+        <div class="medzera">
+            <div class="jeden"></div>
+            <div class="dva"></div>
+            <div class="tri"></div>
+        </div>
+        <div id="jedna" class="lekcia">
+            <div class="teoria">
+                <h2>HTML dokument</h2>
+                <ul>
+                    <li>Všetky HTML dokumenty musia začínať s deklaráciou typu dokumentu: <span class="zvyraznenie">&lt;!DOCTYPE html&gt;</span></li>
+                    <li>HTML dokument samotny začína s <span class="zvyraznenie">&lt;html></span> a končí s <span class="zvyraznenie"> &lt;/html></span></li>
+                    <li>Viditeľná časť HTML dokumentu je medzi <span class="zvyraznenie">&lt;body></span> a <span class="zvyraznenie">&lt;/body></span></li>
+                </ul>
+                <br>
+                <div class="vzor">
+                    <h3>Priklad</h3>
+                    <div class="vnutorne_div">
+                        <p class="code">
+                            <span class="modra">&lt;</span><span class="hneda">!DOCTYPE</span><span class="cervena"> html</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">html</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">title</span><span class="modra">&gt;</span>Názov stránky<span class="modra">&lt;</span><span class="hneda">/title</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">body</span><span class="modra">&gt;</span>
+                            <br><br>
+                            <span class="modra">&lt;</span><span class="hneda">h1</span><span class="modra">&gt;</span>Môj prvý nadpis<span class="modra">&lt;</span><span class="hneda">/h1</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">p</span><span class="modra">&gt;</span>Môj prvý paragraf<span class="modra">&lt;</span><span class="hneda">/p</span><span class="modra">&gt;</span>
+                            <br><br>
+                            <span class="modra">&lt;</span><span class="hneda">/body</span><span class="modra">&gt;</span>
+                            <br>
+                            <span class="modra">&lt;</span><span class="hneda">/html</span><span class="modra">&gt;</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="medzera">
+            <div class="jeden"></div>
+            <div class="dva"></div>
+            <div class="tri"></div>
+        </div>
+        <div id="dva" class="lekcia">
+            <div class="teoria">
+                <h2>deklarácia &lt;!DOCTYPE html></h2>
+                <ul>
+                    <li><span class="zvyraznenie">&lt;!DOCTYPE></span> reprezentuje typ dokumentu a pomáha prehliadavačom zobraziť stránku správne</li>
+                    <li><span class="zvyraznenie">&lt;!DOCTYPE></span> sa smie použiť iba raz, a to na začiatku, pred hocijakým HTML tagom</li>
+                    <li><span class="zvyraznenie">&lt;!DOCTYPE></span> nieje citlivý na veľké a malé písmenká</li>
+                    <li>deklarácia <span class="zvyraznenie">&lt;!DOCTYPE></span> pre html 5 je:</li>
+                </ul>
+                <br>
+                <div class="vzor">
+                    <div class="vnutorne_div">
+                        <p class="code">
+                            <span class="modra">&lt;</span><span class="hneda">!DOCTYPE</span><span class="cervena"> html</span><span class="modra">&gt;</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="medzera">
+            <div class="jeden"></div>
+            <div class="dva"></div>
+            <div class="tri"></div>
+        </div>
+        <div id="tri" class="lekcia">
+            <div class="teoria">
+                <h2>HTML nadpisy</h2>
+                <ul>
+                    <li>HTML nadpisy sú definované tagmi <span class="zvyraznenie">&lt;h1></span> až <span class="zvyraznenie">&lt;h6></span></li>
+                    <li><span class="zvyraznenie">&lt;h1></span> definuje najviac dôležitý nadpis. <span class="zvyraznenie">&lt;h6></span> definuje najmenej dôležitý nadpis</li>
+                </ul>
+                <div class="vzor">
+                    <h3>Priklad</h3>
+                    <div class="vnutorne_div">
+                        <p class="code">
+                            <span class="modra">&lt;</span><span class="hneda">h1</span><span class="modra">&gt;</span>Toto je nadpis 1<span class="modra">&lt;</span><span class="hneda">/h1</span><span class="modra">&gt;</span><br>
+                            <span class="modra">&lt;</span><span class="hneda">h2</span><span class="modra">&gt;</span>Toto je nadpis 2<span class="modra">&lt;</span><span class="hneda">/h2</span><span class="modra">&gt;</span><br>
+                            <span class="modra">&lt;</span><span class="hneda">h3</span><span class="modra">&gt;</span>Toto je nadpis 3<span class="modra">&lt;</span><span class="hneda">/h3</span><span class="modra">&gt;</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="medzera">
+            <div class="jeden"></div>
+            <div class="dva"></div>
+            <div class="tri"></div>
+        </div>
+        <div id="styry" class="lekcia">
+            <div class="teoria">
+                <h2>HTML paragrafy</h2>
+                <ul>
+                    <li>HTML paragrafy sú definované <span class="zvyraznenie">&lt;p></span>:</li>
+                </ul>
+                <div class="vzor">
+                    <h3>Priklad</h3>
+                    <div class="vnutorne_div">
+                        <p class="code">
+                            <span class="modra">&lt;</span><span class="hneda">p</span><span class="modra">&gt;</span>Toto je praragraf.<span class="modra">&lt;</span><span class="hneda">/p</span><span class="modra">&gt;</span><br>
+                            <span class="modra">&lt;</span><span class="hneda">p</span><span class="modra">&gt;</span>Toto je praragraf.<span class="modra">&lt;</span><span class="hneda">/p</span><span class="modra">&gt;</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="medzera">
+            <div class="jeden"></div>
+            <div class="dva"></div>
+            <div class="tri"></div>
+        </div>
+        <div id="pat" class="lekcia">
+            <div class="teoria">
+                <h2>HTML linky</h2>
+                <ul>
+                    <li>HTML linky sú definované tagom <span class="zvyraznenie">&lt;a></span>:</li>
+                </ul>
+                <div class="vzor">
+                    <h3>Priklad</h3>
+                    <div class="vnutorne_div">
+                        <p class="code">
+                            <span class="modra">&lt;<span class="hneda">a</span> <span class="cervena">href</span>= "https://www.google.com/"></span> Toto je link<span class="modra">&lt;<span class="hneda">/a</span>></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="medzera">
+            <div class="jeden"></div>
+            <div class="dva"></div>
+            <div class="tri"></div>
+        </div>
+        <div id="sest" class="lekcia">
+            <div class="teoria">
+                <h2>HTML obrázky</h2>
+                <ul>
+                    <li>Obrázky v HTML sú definované tagom <span class="zvyraznenie">&lt;img></span></li>
+                    <li><span class="zvyraznenie">&lt;img></span> obsahuje atribúty: zdrojový súbbor (<span class="zvyraznenie">src</span>), alternatívny text (<span class="zvyraznenie">alt</span>), <span class="zvyraznenie">width</span>, <span class="zvyraznenie">height</span></li>
+                </ul>
+                <div class="vzor">
+                    <h3>Priklad</h3>
+                    <div class="vnutorne_div">
+                        <p class="code">
+                            <span class="modra">&lt;<span class="hneda">img</span> <span class="cervena">src</span>="obrazok.png" <span class="cervena">alt</span>="obrazok" <span class="cervena">width</span>="50" <span class="cervena"> height</span>="80"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
+
+<!--
+    <div class="vzor">
+        <h3>Priklad</h3>
+        <div class="vnutorne_div">
+            <p class="code">
+            </p>
+        </div>
+    </div>
+-->
