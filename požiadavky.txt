@@ -6,35 +6,35 @@ OBSAH:
     main						-Done
     footer						-To do!!!!
     3-4 podstránky				-In progress
-    responzívny dizajn				-To do!!!!
-    CSS grid					-Done <header>
-    5 sémantických značiek			-To do!!!!
+    responzívny dizajn				-Done
+    CSS grid					-Done
+    5 sémantických značiek			-To do! ???
     <p><div><span>				-Done
     zoznam  odrážkový				-Done
-		číslovaný				-To do!!!!
+		číslovaný				-To do!!!!			<<<< CSS tutorial
 		popiskový				-Done
     tabuľku						-Done
     Obrázky:
-        2 s rámčekom				-To do!!!!
+        2 s rámčekom				-To do!!!!			<<<< CSS tutorial
         1 ako odkaz				-Done
-        1 ako pozadia				-To do!!!!
-    Odkaz na inú stránku			-To do!!!!
+        1 ako pozadia				-To do!!!!			<<<< CSS tutorial
+    Odkaz na inú stránku			-To do!!!!			<<<< CSS tutorial
     Kotvy min 2					-Done
 CSS:
     Triedy						-Done
     identifikátory				-In progress
-    pseudotried					-In progress
+    pseudotriedy					-In progress
     hromadná deklarácia				-Done
     kontextová deklarácia			-To do!!!!
     Vzhľad odkazov podľa stavu		-Done
     Format textu a farby			-Done
-    Rámčeky						-To do!!!!
-    zmena číslovania				-To do!!!!
-    vlastná odrážka				-To do!!!!
-    zmena odrážky					-To do!!!!
+    Rámčeky						-Done
+    zmena číslovania				-To do!!!!			<<<< CSS tutorial
+    vlastná odrážka				-To do!!!!			<<<< CSS tutorial
+    zmena odrážky					-To do!!!!			<<<< CSS tutorial
     margin a padding				-Done
-    z-index						-In progress
+    z-index						-Done
     zaoblenie rohov				-Done
     gradient					-Done
     tien pri objekte 				-Done
-    tien pri texte				-To do!!!!
+    tien pri texte				-To do!!!!			<<<< CSS tutorial

@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -178,6 +179,7 @@ body main .lekcia .teoria .vzor {
   font-family: Consolas, Menlo, "courier new", "monospace";
 }
 body main .lekcia .teoria .vzor .vnutorne_div {
+  border-left: solid rgb(9, 192, 52) 5px;
   background: white;
   padding: 10px;
 }

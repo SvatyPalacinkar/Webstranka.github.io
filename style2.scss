@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -162,6 +163,7 @@ body {
                     margin-left: 10%;
                     font-family: Consolas, Menlo, "courier new", "monospace";
                     .vnutorne_div {
+                        border-left: solid rgb(9, 192, 52) 5px;
                         background: white;
                         @media (min-width: 900px) {
                             min-width: 400px;
