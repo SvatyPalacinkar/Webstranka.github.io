@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
@@ -186,21 +190,6 @@ body {
             }
             .cervena {
                 color: red;
-            }
-        }
-        .medzera {
-            width: auto;
-            .jeden {
-                height: 50px;
-                background: linear-gradient(white, rgb(169, 235, 184));
-            }
-            .dva {
-                height: 50px;
-                background: rgb(169, 235, 184);
-            }
-            .tri {
-                height: 50px;
-                background: linear-gradient(rgb(169, 235, 184), white);
             }
         }
         hr {

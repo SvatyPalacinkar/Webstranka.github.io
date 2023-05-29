@@ -5,51 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
     <title>Programming tutorial</title>
-    <script>
-        window.addEventListener('DOMContentLoaded', function() {
-            var anchorLinks = document.querySelectorAll('a[href^="#"]');
-            for (var i = 0; i < anchorLinks.length; i++) {
-                var anchorLink = anchorLinks[i];
-                anchorLink.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    var target = this.getAttribute('href').substring(1);
-                    if (target === '') {
-                        scrollToTop();
-                    } else {
-                        scrollToCenter(target);
-                    }
-                });
-            }
-        });
-
-        var debounceTimeout;
-
-        function debounce(func, delay) {
-            clearTimeout(debounceTimeout);
-            debounceTimeout = setTimeout(func, delay);
-        }
-
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        function scrollToCenter(target) {
-            var targetElement = document.getElementById(target);
-            if (targetElement) {
-                var elementPosition = targetElement.offsetTop;
-                var offsetPosition = elementPosition - (window.innerHeight / 2 - targetElement.offsetHeight / 2);
-                debounce(function() {
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }, 100);
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -70,7 +25,7 @@
             </caption>
             <tr>
                 <td>
-                    <a href="#" onclick="scrollToTop()">HTML Základ</a>
+                    <a href="#top">HTML Základ</a>
                 </td>
             </tr>
             <tr>
@@ -106,7 +61,7 @@
         </table>
     </nav>
     <main>
-        <h1>Nauč sa s nami programovať!</h1>
+        <h1 id="top">Nauč sa s nami programovať!</h1>
         <div id="nula" class="lekcia">
             <div class="teoria">
                 <h2 id="zaklad">Čo je HTML?</h2>
