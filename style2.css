@@ -225,4 +225,7 @@ body main .medzera .dva {
 body main .medzera .tri {
   height: 50px;
   background: linear-gradient(rgb(169, 235, 184), white);
+}
+body main hr {
+  border: rgb(220, 220, 220) solid 5px;
 }/*# sourceMappingURL=style2.css.map */
