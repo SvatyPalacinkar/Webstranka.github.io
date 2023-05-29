@@ -55,33 +55,6 @@ body header .jazyky .selected:hover {
 body nav {
   position: fixed;
   min-width: 135px;
-  /*@media (max-width:849px) {
-      @media (min-width: 600px) {
-          position: fixed;
-          margin-top: 69px;
-          float: left;
-          width: 135px;
-          height: 100vh;
-          background: rgb(220, 220, 220);
-      }
-  }
-  @media (max-width: 1249px) {
-      @media (min-width: 850px) {
-          position: fixed;
-          margin-top: 69px;
-          float: left;
-          height: 100vh;
-          background: rgb(220, 220, 220);
-      }
-  }
-  @media (min-width: 1250px) {
-      position: fixed;
-      margin-top: 69px;
-      float: left;
-      width: 10%;
-      height: 100vh;
-      background: rgb(220, 220, 220);
-  }*/
 }
 @media (max-width: 819px) {
   body nav {
@@ -123,7 +96,6 @@ body nav table tr td a {
 }
 body main {
   position: relative;
-  /*float: right;*/
   margin-top: 70px;
 }
 @media (max-width: 819px) {
@@ -153,12 +125,6 @@ body main h3 {
 body main .lekcia {
   padding-left: 5%;
   background: white;
-}
-@media (min-width: 1500px) {
-  body main .lekcia {
-    display: grid;
-    grid-template-columns: 50%;
-  }
 }
 body main .lekcia .zvyraznenie {
   background: rgb(230, 230, 230);
@@ -194,11 +160,6 @@ body main .lekcia dl dd {
   width: -moz-fit-content;
   width: fit-content;
 }
-@media (min-width: 1500px) {
-  body main .lekcia .teoria {
-    grid-column: 1;
-  }
-}
 body main .lekcia .teoria .vzor {
   background: lightgray;
   padding: 15px;
@@ -216,9 +177,29 @@ body main .lekcia .teoria .vzor .vnutorne_div {
   background: white;
   padding: 10px;
 }
-@media (min-width: 1500px) {
-  body main .lekcia .vysvetlivka {
-    grid-column: 2;
+@media (min-width: 900px) {
+  body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 500px;
+  }
+}
+@media (min-width: 1100px) {
+  body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 700px;
+  }
+}
+@media (min-width: 1300px) {
+  body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 800px;
   }
 }
 body main .lekcia .hneda {

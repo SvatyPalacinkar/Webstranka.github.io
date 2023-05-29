@@ -5,7 +5,6 @@
 
 body {
     width: 100%;
-    //background: rgb(169, 235, 184);
     font-family: 'Source Sans Pro', sans-serif;
     a {
         color: rgb(8, 0, 44);
@@ -72,33 +71,6 @@ body {
             z-index: 1;
             background: rgb(220, 220, 220);
         }
-        /*@media (max-width:849px) {
-            @media (min-width: 600px) {
-                position: fixed;
-                margin-top: 69px;
-                float: left;
-                width: 135px;
-                height: 100vh;
-                background: rgb(220, 220, 220);
-            }
-        }
-        @media (max-width: 1249px) {
-            @media (min-width: 850px) {
-                position: fixed;
-                margin-top: 69px;
-                float: left;
-                height: 100vh;
-                background: rgb(220, 220, 220);
-            }
-        }
-        @media (min-width: 1250px) {
-            position: fixed;
-            margin-top: 69px;
-            float: left;
-            width: 10%;
-            height: 100vh;
-            background: rgb(220, 220, 220);
-        }*/
         table {
             position: relative;
             left: 0%;
@@ -123,7 +95,6 @@ body {
     }
     main {
         position: relative;
-        /*float: right;*/
         margin-top: 70px;
         @media (max-width: 819px) {
             width: 100%;
@@ -146,10 +117,6 @@ body {
         .lekcia {
             padding-left: 5%;
             background: white;
-            @media (min-width: 1500px) {
-                display: grid;
-                grid-template-columns: 50%;
-            }
             .zvyraznenie {
                 background: rgb(230, 230, 230);
                 color: red;
@@ -180,9 +147,6 @@ body {
                 }
             }
             .teoria {
-                @media (min-width: 1500px) {
-                    grid-column: 1;
-                }
                 .vzor {
                     background: lightgray;
                     padding: 15px;
@@ -195,13 +159,23 @@ body {
                     font-family: Consolas, Menlo, "courier new", "monospace";
                     .vnutorne_div {
                         background: white;
+                        @media (min-width: 900px) {
+                            min-width: 400px;
+                        }
+                        @media (min-width: 1000px) {
+                            min-width: 500px;
+                        }
+                        @media (min-width: 1100px) {
+                            min-width: 600px;
+                        }
+                        @media (min-width: 1200px) {
+                            min-width: 700px;
+                        }
+                        @media (min-width: 1300px) {
+                            min-width: 800px;
+                        }
                         padding: 10px;
                     }
-                }
-            }
-            .vysvetlivka {
-                @media (min-width: 1500px) {
-                    grid-column: 2;
                 }
             }
             .hneda {
