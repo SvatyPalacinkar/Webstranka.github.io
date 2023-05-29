@@ -7,10 +7,10 @@ OBSAH:
     footer						-To do!!!!
     3-4 podstránky				-In progress
     responzívny dizajn				-To do!!!!
-    CSS grid					-To do!!!! Done <header>
+    CSS grid					-Done <header>
     5 sémantických značiek			-To do!!!!
-    <p><div><span>				-DoneDone
-    zoznam  odrážkový				-DoneDone
+    <p><div><span>				-Done
+    zoznam  odrážkový				-Done
 		číslovaný				-To do!!!!
 		popiskový				-Done
     tabuľku						-Done

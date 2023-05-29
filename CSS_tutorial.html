@@ -2,8 +2,54 @@
 <html lang="sk">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
-    <title>Programing tutorial</title>
+    <title>Programming tutorial</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var anchorLinks = document.querySelectorAll('a[href^="#"]');
+            for (var i = 0; i < anchorLinks.length; i++) {
+                var anchorLink = anchorLinks[i];
+                anchorLink.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var target = this.getAttribute('href').substring(1);
+                    if (target === '') {
+                        scrollToTop();
+                    } else {
+                        scrollToCenter(target);
+                    }
+                });
+            }
+        });
+
+        var debounceTimeout;
+
+        function debounce(func, delay) {
+            clearTimeout(debounceTimeout);
+            debounceTimeout = setTimeout(func, delay);
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollToCenter(target) {
+            var targetElement = document.getElementById(target);
+            if (targetElement) {
+                var elementPosition = targetElement.offsetTop;
+                var offsetPosition = elementPosition - (window.innerHeight / 2 - targetElement.offsetHeight / 2);
+                debounce(function() {
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }, 100);
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -25,13 +71,6 @@
             <tr>
                 <td>
                     <a href="#" onclick="scrollToTop()">CSS Základ</a>
-                    <script>
-                        function scrollToTop() {
-                            function scrollToTop() {
-                                window.scrollTo(0, 0);
-                            }
-                        }
-                    </script>
                 </td>
             </tr>
             <tr>
@@ -64,9 +103,15 @@
     <main>
         <h1>Nauč sa s nami programovať!</h1>
         <div id="nula" class="lekcia">
-            <p>
+            <div class="teoria">
                 <h2 id="zaklad">Čo je CSS?</h2>
-            </p>
+                <ul>
+                    <li>CSS je skratka pre Cascading Style Sheets</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
         <div class="medzera">
             <div class="jeden"></div>
