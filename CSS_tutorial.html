@@ -35,7 +35,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href=""></a>
+                    <a href="#tri">CSS Zoznamy</a>
                 </td>
             </tr>
             <tr>
@@ -168,6 +168,85 @@
         <br><br>
         <hr>
         <br><br>
+        <div id="tri" class="lekcia">
+            <div class="teoria">
+                <br><br>
+                <h2>CSS zoznamy</h2>
+                <p>
+                    V HTML sú dva hlavné druhy listov:
+                    <br><br>
+                    <ul>
+                        <li>Neusporiadany list <span class="zvyraznenie">&lt;ul></span> - jednotlivé zložky v liste sú označené s odrážkami</li>
+                        <li>Usporiadany list <span class="zvyraznenie">&lt;ol></span> - jednotlivé zložky v liste sú označené číslom alebo s písmenkom</li>
+                    </ul>
+                    <br> V CSS vieme nastaviť vlastnosti na:
+                    <br><br>
+                    <ul>
+                        <li>Nastaviť iný typ odrážky v usporiadanom liste</li>
+                        <li>Nastaviť iný typ odrážky v neusporiadanom liste</li>
+                        <li>Nastaviť obrázok ako odrážku</li>
+                        <li>Pridať farbu pozadia listu aj jednotlivým zložkám</li>
+                    </ul>
+                </p>
+                <div class="vzor">
+                    <h3>Priklad 1</h3>
+                    <div class="vnutorne_div_s_zobrazenim">
+                        <p class="code">
+                            <span class="hneda">ol</span>{<br> &nbsp;&nbsp;&nbsp;
+                            <span class="cervena">list-style-type</span>: <span class="modra">decimal</span>
+                            <br>}
+                        </p>
+                        <ol id="zobrazenie" class="decimal">
+                            <li>text</li>
+                            <li>text</li>
+                            <li>text</li>
+                        </ol>
+                    </div>
+                    <br><br>
+                    <h3>Priklad 2</h3>
+                    <div class="vnutorne_div_s_zobrazenim">
+                        <p class="code">
+                            <span class="hneda">ol</span>{<br> &nbsp;&nbsp;&nbsp;
+                            <span class="cervena">list-style-type</span>: <span class="modra">lower-latin</span>
+                            <br>}
+                        </p>
+                        <ol id="zobrazenie" class="lower_latin">
+                            <li>text</li>
+                            <li>text</li>
+                            <li>text</li>
+                        </ol>
+                    </div>
+                    <br><br>
+                    <h3>Priklad 3</h3>
+                    <div class="vnutorne_div_s_zobrazenim">
+                        <p class="code">
+                            <span class="hneda">ul</span>{<br> &nbsp;&nbsp;&nbsp;
+                            <span class="cervena">list-style-type</span>: <span class="modra">circle</span>
+                            <br>}
+                        </p>
+                        <ul id="zobrazenie" class="circle">
+                            <li>text</li>
+                            <li>text</li>
+                            <li>text</li>
+                        </ul>
+                    </div>
+                    <br><br>
+                    <h3>Priklad s obrázkom ako odrážkou</h3>
+                    <div class="vnutorne_div_s_zobrazenim">
+                        <p class="code">
+                            <span class="hneda">ul</span>{<br> &nbsp;&nbsp;&nbsp;
+                            <span class="cervena">list-style-type</span>: <span class="modra">url("picture.png")</span>
+                            <br>}
+                        </p>
+                        <ul id="zobrazenie" class="custom_odrazka">
+                            <li>text</li>
+                            <li>text</li>
+                            <li>text</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
     </footer>

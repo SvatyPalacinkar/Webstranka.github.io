@@ -11,7 +11,7 @@ OBSAH:
     5 sémantických značiek			-To do! ???
     <p><div><span>				-Done
     zoznam  odrážkový				-Done
-		číslovaný				-To do!!!!			<<<< CSS tutorial
+		číslovaný				-Done
 		popiskový				-Done
     tabuľku						-Done
     Obrázky:
@@ -35,6 +35,6 @@ CSS:
     margin a padding				-Done
     z-index						-Done
     zaoblenie rohov				-Done
-    gradient					-Done
+    gradient					-To do!!!!			<<<< CSS tutorial
     tien pri objekte 				-Done
     tien pri texte				-To do!!!!			<<<< CSS tutorial

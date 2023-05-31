@@ -208,6 +208,61 @@ body main .lekcia .teoria .vzor .vnutorne_div {
     min-width: 800px;
   }
 }
+body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+  border-left: solid rgb(9, 192, 52) 5px;
+  background: white;
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+@media (min-width: 900px) {
+  body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 500px;
+  }
+}
+@media (min-width: 1100px) {
+  body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 700px;
+  }
+}
+@media (min-width: 1300px) {
+  body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 800px;
+  }
+}
+body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .code {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+}
+body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim #zobrazenie {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+}
+body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .decimal {
+  list-style-type: decimal;
+}
+body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .lower_latin {
+  list-style-type: lower-latin;
+}
+body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .circle {
+  list-style-type: circle;
+}
+body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .custom_odrazka {
+  list-style-image: url("amogus.png");
+}
 body main .lekcia .hneda {
   color: brown;
 }
