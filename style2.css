@@ -165,6 +165,26 @@ body main .lekcia dl dd {
   width: -moz-fit-content;
   width: fit-content;
 }
+body main .lekcia .teoria .gradient_linearny_spodok {
+  width: 95%;
+  height: 100px;
+  background-image: linear-gradient(red, yellow);
+}
+body main .lekcia .teoria .gradient_linearny_pravo {
+  width: 95%;
+  height: 100px;
+  background-image: linear-gradient(to right, red, yellow);
+}
+body main .lekcia .teoria .gradient_linearny_diagonala {
+  width: 95%;
+  height: 100px;
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+body main .lekcia .teoria .gradient_linearny_uhol {
+  width: 95%;
+  height: 100px;
+  background-image: linear-gradient(200deg, red, yellow);
+}
 body main .lekcia .teoria .vzor {
   background: lightgray;
   padding: 15px;
@@ -271,6 +291,10 @@ body main .lekcia .modra {
 }
 body main .lekcia .cervena {
   color: red;
+}
+body main .lekcia .ramcek {
+  border: gray solid 1px;
+  padding: 5px;
 }
 body main hr {
   border: rgb(220, 220, 220) solid 5px;

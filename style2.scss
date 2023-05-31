@@ -152,6 +152,26 @@ body {
                 }
             }
             .teoria {
+                .gradient_linearny_spodok {
+                    width: 95%;
+                    height: 100px;
+                    background-image: linear-gradient(red, yellow);
+                }
+                .gradient_linearny_pravo {
+                    width: 95%;
+                    height: 100px;
+                    background-image: linear-gradient(to right, red, yellow);
+                }
+                .gradient_linearny_diagonala {
+                    width: 95%;
+                    height: 100px;
+                    background-image: linear-gradient(to bottom right, red, yellow);
+                }
+                .gradient_linearny_uhol {
+                    width: 95%;
+                    height: 100px;
+                    background-image: linear-gradient(200deg, red, yellow);
+                }
                 .vzor {
                     background: lightgray;
                     padding: 15px;
@@ -237,6 +257,10 @@ body {
             }
             .cervena {
                 color: red;
+            }
+            .ramcek {
+                border: gray solid 1px;
+                padding: 5px;
             }
         }
         hr {

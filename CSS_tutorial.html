@@ -9,7 +9,6 @@
 
 <body>
     <header>
-        <!-- Left menu: výber lekcie jazyka-->
         <div class="jazyky">
             <a href="index.html"><img src="home.png" width="22" height="22" class="obrazok"></a>
             <a href="HTML_tutorial.html">HTML</a>
@@ -40,17 +39,12 @@
             </tr>
             <tr>
                 <td>
-                    <a href=""></a>
+                    <a href="#styry">CSS Gradienty</a>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href=""></a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href=""></a>
+                    <a href="#pat">CSS Tiene</a>
                 </td>
             </tr>
         </table>
@@ -245,6 +239,92 @@
                         </ul>
                     </div>
                 </div>
+                <ul>
+                    <li>Zmena čislovania sa dá jednoduchšie urobiť v HTML súbore. V priklade je ukazane ako</li>
+                </ul>
+                <div class="vzor">
+                    <h3>Priklad na zmenu čislovania v HTML</h3>
+                    <div class="vnutorne_div_s_zobrazenim">
+                        <p class="code">
+                            <span class="modra">&lt;</span><span class="hneda">li</span><span class="modra">></span>text<span class="modra">&lt;</span><span class="hneda">/li</span><span class="modra">></span><br>
+                            <span class="modra">&lt;</span><span class="hneda">li <span class="modra"> value="55"</span></span><span class="modra">></span>text<span class="modra">&lt;</span><span class="hneda">/li</span><span class="modra">></span><br>
+                            <span class="modra">&lt;</span><span class="hneda">li</span><span class="modra">></span>text<span class="modra">&lt;</span><span class="hneda">/li</span><span class="modra">></span>
+                        </p>
+                        <ol id="zobrazenie" class="custom_cislovanie">
+                            <li>text</li>
+                            <li value="55">text</li>
+                            <li>text</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div id="styry" class="lekcia">
+            <div class="teoria">
+                <br><br>
+                <h2>CSS Gradienty</h2>
+                <ul>
+                    <li>CSS gradienty ti dovolia hladký prechod medzi dvoma alebo viacerými farbami</li>
+                    <li>CSS má tri typy gradientov:</li>
+                    <ol>
+                        <li>Lineárny Gradient</li>
+                        <li>Radiálny Gradient</li>
+                        <li>Kužeľový Gradient</li>
+                    </ol>
+                </ul>
+                <h3>CSS Lineárne Gradienty</h3>
+                <p>
+                    <br>
+                    <h4>Syntax príkazu:</h4><br>
+                    <span class="ramcek">background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</span>
+                    <br><br>
+                    <h4>Smer Gradientu je defaultne nastavený na spodok</h4>
+                    <br>
+                    <div class="vzor">
+                        <div class="vnutorne_div">
+                            <span class="hneda">div</span> {<br>
+                            <span class="cervena">background-image</span>: <span class="modra">linear-gradient(red, yellow)</span>;<br> }
+                        </div>
+                    </div>
+                    <br>
+                    <div class="gradient_linearny_spodok"></div>
+                    <br><br>
+                    <h4>Smer Gradientu - do prava</h4>
+                    <br>
+                    <div class="vzor">
+                        <div class="vnutorne_div">
+                            <span class="hneda">div</span> {<br>
+                            <span class="cervena">background-image</span>: <span class="modra">linear-gradient(to right, red, yellow)</span>;<br> }
+                        </div>
+                    </div>
+                    <br>
+                    <div class="gradient_linearny_pravo"></div>
+                    <br><br>
+                    <h4>Smer Gradientu - Diagonala</h4>
+                    <br>
+                    <div class="vzor">
+                        <div class="vnutorne_div">
+                            <span class="hneda">div</span> {<br>
+                            <span class="cervena">background-image</span>: <span class="modra">linear-gradient(to bottom right, red, yellow)</span>;<br> }
+                        </div>
+                    </div>
+                    <br>
+                    <div class="gradient_linearny_diagonala"></div>
+                    <br><br>
+                    <h4>Smer Gradientu - Konkrétny úhol</h4>
+                    <br>
+                    <div class="vzor">
+                        <div class="vnutorne_div">
+                            <span class="hneda">div</span> {<br>
+                            <span class="cervena">background-image</span>: <span class="modra">linear-gradient(200deg, red, yellow)</span>;<br> }
+                        </div>
+                    </div>
+                    <br>
+                    <div class="gradient_linearny_uhol"></div>
+                </p>
             </div>
         </div>
     </main>
