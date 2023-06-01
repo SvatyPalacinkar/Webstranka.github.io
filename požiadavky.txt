@@ -1,19 +1,19 @@
 Uložený:
-    Valluš_2E.zip			!NIE AKO .RAR
+    Valluš_2E.zip		!NIE AKO .RAR
 OBSAH:
-    header				-Done
+    header			-Done
     nav				-Done
-    main				-Done
-    footer				-To do!!!!
+    main			-Done
+    footer			-To do!!!!
     3-4 podstránky		-In progress
     responzívny dizajn		-Done
     CSS grid			-Done
     5 sémantických značiek	-Done
     <p><div><span>		-Done
     zoznam  odrážkový		-Done
-		číslovaný		-Done
-		popiskový		-Done
-    tabuľku				-Done
+		číslovaný	-Done
+		popiskový	-Done
+    tabuľku			-Done
     Obrázky:
         2 s rámčekom		-To do!!!!			<<<< CSS tutorial
         1 ako odkaz		-Done
@@ -21,19 +21,19 @@ OBSAH:
     Odkaz na inú stránku	-To do!!!!			<<<< CSS tutorial
     Kotvy min 2			-Done
 CSS:
-    Triedy				-Done
+    Triedy			-Done
     identifikátory		-Done
-    pseudotriedy			-To do!!!!
+    pseudotriedy		-To do!!!!
     hromadná deklarácia		-Done
     kontextová deklarácia	-Done
     Vzhľad odkazov podľa stavu-Done
     Format textu a farby	-Done
-    Rámčeky				-Done
+    Rámčeky			-Done
     zmena číslovania		-Done
     vlastná odrážka		-Done
-    zmena odrážky			-Done
+    zmena odrážky		-Done
     margin a padding		-Done
-    z-index				-Done
+    z-index			-Done
     zaoblenie rohov		-Done
     gradient			-Done
     tien pri objekte 		-To do!!!!			<<<< CSS tutorial
