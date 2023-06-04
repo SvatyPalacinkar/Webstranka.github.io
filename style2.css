@@ -185,6 +185,24 @@ body main .lekcia .teoria .gradient_linearny_uhol {
   height: 100px;
   background-image: linear-gradient(200deg, red, yellow);
 }
+body main .lekcia .teoria .tiene_pri_nadpise {
+  text-shadow: 3px 3px red;
+}
+body main .lekcia .teoria .tiene_pri_nadpise_rozmazany {
+  text-shadow: 3px 3px 3px red;
+}
+body main .lekcia .teoria .box_s_tienom {
+  width: 200px;
+  height: 100px;
+  background: orange;
+  box-shadow: 10px 10px blue;
+}
+body main .lekcia .teoria .box_s_tienom_rozmazane {
+  width: 200px;
+  height: 100px;
+  background: orange;
+  box-shadow: 10px 10px 20px blue;
+}
 body main .lekcia .teoria .vzor {
   background: lightgray;
   padding: 15px;

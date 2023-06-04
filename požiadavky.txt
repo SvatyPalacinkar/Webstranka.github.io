@@ -36,5 +36,5 @@ CSS:
     z-index			-Done
     zaoblenie rohov		-Done
     gradient			-Done
-    tien pri objekte 		-To do!!!!			<<<< CSS tutorial
-    tien pri texte		-To do!!!!			<<<< CSS tutorial
+    tien pri objekte 		-Done
+    tien pri texte		-Done
