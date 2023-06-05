@@ -390,4 +390,394 @@ body main hr {
   background-color: rgb(105, 105, 105);
   font-size: 50px;
   color: white;
+}
+.prerabka * {
+  margin: 0;
+}
+.prerabka html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+.prerabka body {
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.prerabka body a {
+  color: rgb(8, 0, 44);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.prerabka body header {
+  width: 100%;
+  color: black;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  min-height: 60px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #282A35;
+}
+.prerabka body header .jazyky {
+  display: grid;
+  justify-content: start;
+  padding: 13px 10px;
+}
+.prerabka body header .jazyky a {
+  display: grid;
+  grid-row: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  color: white;
+  background: #282A35;
+}
+.prerabka body header .jazyky a:hover {
+  background: #202129;
+}
+.prerabka body header .jazyky .selected {
+  background: rgb(4, 156, 39);
+  border-radius: 10px;
+}
+.prerabka body header .jazyky .selected:hover {
+  background: rgb(3, 105, 27);
+}
+.prerabka body nav {
+  position: fixed;
+  min-width: 135px;
+}
+@media (max-width: 819px) {
+  .prerabka body nav {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+}
+@media (min-width: 820px) {
+  .prerabka body nav {
+    position: fixed;
+    top: 69px;
+    float: left;
+    width: 140px;
+    height: 100vh;
+    z-index: 1;
+    background: rgb(220, 220, 220);
+  }
+}
+.prerabka body nav table {
+  position: relative;
+  left: 0%;
+  width: 100%;
+}
+.prerabka body nav table caption {
+  margin: 20px 0 3px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.prerabka body nav table tr td:hover {
+  background: rgb(180, 180, 180);
+}
+.prerabka body nav table tr td a {
+  display: block;
+  width: 96%;
+}
+.prerabka body main {
+  position: relative;
+  margin-top: 70px;
+}
+@media (max-width: 819px) {
+  .prerabka body main {
+    width: 100%;
+  }
+}
+@media (min-width: 820px) {
+  .prerabka body main {
+    margin-left: 135px;
+    width: auto;
+  }
+}
+.prerabka body main h1 {
+  padding: 0 0 50px 25px;
+  background: white;
+}
+.prerabka body main h2 {
+  margin-bottom: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.prerabka body main h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.prerabka body main .lekcia {
+  padding-left: 5%;
+  background: white;
+}
+.prerabka body main .lekcia .zvyraznenie {
+  background: rgb(230, 230, 230);
+  color: red;
+}
+.prerabka body main .lekcia ul {
+  translate: 35px;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 90%;
+  min-width: 50%;
+  padding-left: 0;
+}
+.prerabka body main .lekcia ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px;
+}
+.prerabka body main .lekcia dl {
+  translate: 1%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1%;
+  max-width: 90%;
+  min-width: 50%;
+}
+.prerabka body main .lekcia dl dt {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.prerabka body main .lekcia dl dd {
+  margin: 10px 0 10px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 1100px) {
+  .prerabka body main .lekcia img {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 1099px) {
+  .prerabka body main .lekcia img {
+    width: 80%;
+    max-width: 569px;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .prerabka body main .lekcia img {
+    width: 95%;
+    height: auto;
+  }
+}
+.prerabka body main .lekcia .teoria .gradient_linearny_spodok {
+  width: 95%;
+  height: 100px;
+  background-image: linear-gradient(red, yellow);
+}
+.prerabka body main .lekcia .teoria .gradient_linearny_pravo {
+  width: 95%;
+  height: 100px;
+  background-image: linear-gradient(to right, red, yellow);
+}
+.prerabka body main .lekcia .teoria .gradient_linearny_diagonala {
+  width: 95%;
+  height: 100px;
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+.prerabka body main .lekcia .teoria .gradient_linearny_uhol {
+  width: 95%;
+  height: 100px;
+  background-image: linear-gradient(200deg, red, yellow);
+}
+.prerabka body main .lekcia .teoria .tiene_pri_nadpise {
+  text-shadow: 3px 3px red;
+}
+.prerabka body main .lekcia .teoria .tiene_pri_nadpise_rozmazany {
+  text-shadow: 3px 3px 3px red;
+}
+.prerabka body main .lekcia .teoria .box_s_tienom {
+  width: 200px;
+  height: 100px;
+  background: orange;
+  box-shadow: 10px 10px blue;
+}
+.prerabka body main .lekcia .teoria .box_s_tienom_rozmazane {
+  width: 200px;
+  height: 100px;
+  background: orange;
+  box-shadow: 10px 10px 20px blue;
+}
+.prerabka body main .lekcia .teoria .obrazok_v_div {
+  width: 259px;
+  height: 194px;
+  background-image: url("background.jfif");
+  border: 3px solid black;
+}
+.prerabka body main .lekcia .teoria .google_link_obrazok {
+  display: block;
+  background-image: url("google.png");
+  width: 538px;
+  max-width: 538px;
+  height: 190px;
+}
+@media (min-width: 600px) {
+  .prerabka body main .lekcia .teoria .google_link_obrazok {
+    width: 538px;
+    height: 190px;
+  }
+}
+@media (max-width: 599px) {
+  .prerabka body main .lekcia .teoria .google_link_obrazok {
+    background-image: url("google.png");
+    background-size: 100% 100%;
+    width: 300px;
+    height: 105px;
+  }
+}
+.prerabka body main .lekcia .teoria .div_png_border {
+  width: 200px;
+  height: 200px;
+  border: 50px solid transparent;
+  -o-border-image: url("border.png") 25 round;
+     border-image: url("border.png") 25 round;
+}
+.prerabka body main .lekcia .teoria .vzor {
+  background: lightgray;
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 250px;
+  max-width: 75%;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 10%;
+  font-family: Consolas, Menlo, "courier new", "monospace";
+}
+.prerabka body main .lekcia .teoria .vzor .vnutorne_div {
+  border-left: solid rgb(9, 192, 52) 5px;
+  background: white;
+  padding: 10px;
+}
+@media (min-width: 900px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 500px;
+  }
+}
+@media (min-width: 1100px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 700px;
+  }
+}
+@media (min-width: 1300px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div {
+    min-width: 800px;
+  }
+}
+.prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+  border-left: solid rgb(9, 192, 52) 5px;
+  background: white;
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+@media (min-width: 900px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 500px;
+  }
+}
+@media (min-width: 1100px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 700px;
+  }
+}
+@media (min-width: 1300px) {
+  .prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim {
+    min-width: 800px;
+  }
+}
+.prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .code {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+}
+.prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim #zobrazenie {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+}
+.prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .decimal {
+  list-style-type: decimal;
+}
+.prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .lower_latin {
+  list-style-type: lower-latin;
+}
+.prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .circle {
+  list-style-type: circle;
+}
+.prerabka body main .lekcia .teoria .vzor .vnutorne_div_s_zobrazenim .custom_odrazka {
+  list-style-image: url("amogus.png");
+}
+.prerabka body main .lekcia .hneda {
+  color: brown;
+}
+.prerabka body main .lekcia .modra {
+  color: mediumblue;
+}
+.prerabka body main .lekcia .cervena {
+  color: red;
+}
+.prerabka body main .lekcia .ramcek {
+  border: gray solid 1px;
+  padding: 5px;
+}
+.prerabka body main hr {
+  border: rgb(220, 220, 220) solid 5px;
+}
+.prerabka .prerabka {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  z-index: 2;
+  background-image: url("prerabka_rovno.png");
+  width: 100%;
+  height: 20%;
+}
+.prerabka .prerabka p {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  padding: 15px 5px;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: rgb(105, 105, 105);
+  font-size: 50px;
+  color: white;
 }/*# sourceMappingURL=style2.css.map */
