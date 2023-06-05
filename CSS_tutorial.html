@@ -132,7 +132,7 @@
                 <br><br>
                 <h2>CSS syntax</h2>
                 <br>
-                <img src="CSS_Syntax.gif">
+                <img src="CSS_Syntax.gif" class="CSS_syntax_obrazok">
                 <ul>
                     <li>Selektor udáva ktorý HTML element chceme štýlovať.</li>
                     <li>Deklaračný blok obsahuje jednu alebo viac deklarácií oddelených bodkočiarkou.</li>
@@ -353,11 +353,13 @@
                         <li><span class="zvyraznenie">box-shadow</span></li>
                     </ol>
                 </ul>
+                <br>
                 <p class="tiene_pri_texte">
                     <h3>CSS Tiene Pri Texte</h3>
                     <ul>
                         <li>V CSS vlastnosť <span class="zvyraznenie">text-shadow</span> pridáva tieň textu</li>
                     </ul>
+                    <br>
                     <div class="vzor">
                         <div class="vnutorne_div">
                             <span class="hneda">h1</span> {<br> &nbsp;&nbsp;&nbsp;
@@ -365,7 +367,9 @@
                             <br>}
                         </div>
                     </div>
+                    <br>
                     <h2 class="tiene_pri_nadpise">&nbsp;&nbsp;&nbsp;Text Shadow</h2>
+                    <br>
                     <div class="vzor">
                         <div class="vnutorne_div">
                             <span class="hneda">h1</span> {<br> &nbsp;&nbsp;&nbsp;
@@ -373,6 +377,7 @@
                             <br>}
                         </div>
                     </div>
+                    <br>
                     <h2 class="tiene_pri_nadpise_rozmazany">&nbsp;&nbsp;&nbsp;Text Shadow</h2>
                 </p>
                 <br><br>
@@ -381,6 +386,7 @@
                     <ul>
                         <li>V CSS vlastnosť <span class="zvyraznenie">box-shadow</span> pridáva tieň elementu</li>
                     </ul>
+                    <br>
                     <div class="vzor">
                         <div class="vnutorne_div">
                             <span class="hneda">div</span> {<br> &nbsp;&nbsp;&nbsp;
@@ -391,11 +397,13 @@
                     <div class="box_s_tienom"></div>
                     <br>
                 </p>
+                <br>
                 <p class="tiene_pri_boxe_rozmazane">
                     <h2>CSS Rozostrené Tiene Pri Elemente</h2>
                     <ul>
                         <li>V CSS vlastnosť <span class="zvyraznenie">box-shadow</span> pridáva tieň elementu</li>
                     </ul>
+                    <br>
                     <div class="vzor">
                         <div class="vnutorne_div">
                             <span class="hneda">div</span> {<br> &nbsp;&nbsp;&nbsp;
@@ -417,10 +425,44 @@
                 <h2>CSS Obrázky</h2>
                 <ul>
                     <li>
-                        a
+                        V CSS vieme použiť obrázok ako pozadie elementu
                     </li>
                 </ul>
+                <br>
+                <div class="vzor">
+                    <div class="vnutorne_div"><span class="hneda">#priklad</span> {<br> &nbsp;&nbsp;&nbsp;<span class="cervena">background-image</span> : <span class="modra">url("background.png")</span>;<br>}
+                    </div>
+                </div>
+                <br>
+                <div class="obrazok_v_div"></div>
+                <br>
+                <ul>
+                    <li>Obrázok ako pozadie vieme dať aj linku</li>
+                </ul>
+                <br>
+                <div class="vzor">
+                    <div class="vnutorne_div">
+                        <span class="hneda">a</span> {<br>&nbsp;&nbsp;&nbsp;<span class="cervena">background-image</span>: <span class="modra">url("google.png")</span>;<br>}
+                    </div>
+                </div>
+                <br>
+                <a href="https://www.google.com/" class="google_link_obrazok" target="_blank"></a>
+                <br>
+                <ul>
+                    <li>A samozrejme obrazky vieme dať aj ako rámček</li>
+                </ul>
+                <br>
+                <div class="vzor">
+                    <div class="vnutorne_div">
+                        <span class="hneda">img</span>{
+                        <br>&nbsp;&nbsp;&nbsp;<span class="cervena">border-image</span>: <span class="modra">url("border.png") 25 round</span>;
+                        <br>}
+                    </div>
+                </div>
+                <br>
+                <div class="div_png_border"></div>
             </div>
+            <br><br>
         </div>
     </main>
     <footer>

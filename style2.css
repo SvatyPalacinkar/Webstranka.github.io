@@ -21,7 +21,7 @@ body header {
   width: 100%;
   color: black;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   width: 100%;
   min-height: 60px;
@@ -165,6 +165,25 @@ body main .lekcia dl dd {
   width: -moz-fit-content;
   width: fit-content;
 }
+@media (min-width: 1100px) {
+  body main .lekcia img {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 1099px) {
+  body main .lekcia img {
+    width: 80%;
+    max-width: 569px;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  body main .lekcia img {
+    width: 95%;
+    height: auto;
+  }
+}
 body main .lekcia .teoria .gradient_linearny_spodok {
   width: 95%;
   height: 100px;
@@ -202,6 +221,25 @@ body main .lekcia .teoria .box_s_tienom_rozmazane {
   height: 100px;
   background: orange;
   box-shadow: 10px 10px 20px blue;
+}
+body main .lekcia .teoria .obrazok_v_div {
+  width: 259px;
+  height: 194px;
+  background-image: url("background.jfif");
+  border: 3px solid black;
+}
+body main .lekcia .teoria .google_link_obrazok {
+  display: block;
+  width: 538px;
+  height: 190px;
+  background-image: url("google.png");
+}
+body main .lekcia .teoria .div_png_border {
+  width: 200px;
+  height: 200px;
+  border: 50px solid transparent;
+  -o-border-image: url("border.png") 25 round;
+     border-image: url("border.png") 25 round;
 }
 body main .lekcia .teoria .vzor {
   background: lightgray;
@@ -316,4 +354,25 @@ body main .lekcia .ramcek {
 }
 body main hr {
   border: rgb(220, 220, 220) solid 5px;
+}
+
+.prerabka {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  z-index: 2;
+  background-image: url("prerabka_rovno.png");
+  width: 100%;
+  height: 20%;
+}
+.prerabka p {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  padding: 15px 5px;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: rgb(105, 105, 105);
+  font-size: 50px;
+  color: white;
 }/*# sourceMappingURL=style2.css.map */
