@@ -230,9 +230,24 @@ body main .lekcia .teoria .obrazok_v_div {
 }
 body main .lekcia .teoria .google_link_obrazok {
   display: block;
-  width: 538px;
-  height: 190px;
   background-image: url("google.png");
+  width: 538px;
+  max-width: 538px;
+  height: 190px;
+}
+@media (min-width: 600px) {
+  body main .lekcia .teoria .google_link_obrazok {
+    width: 538px;
+    height: 190px;
+  }
+}
+@media (max-width: 599px) {
+  body main .lekcia .teoria .google_link_obrazok {
+    background-image: url("google.png");
+    background-size: 100% 100%;
+    width: 300px;
+    height: 105px;
+  }
 }
 body main .lekcia .teoria .div_png_border {
   width: 200px;
